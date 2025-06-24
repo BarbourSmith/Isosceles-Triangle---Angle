@@ -1,14 +1,51 @@
 {
     "atomType": "Molecule",
-    "name": "Isosceles Triangle - Angle",
+    "name": "Isosceles-Triangle---Angle",
     "x": 0,
     "y": 0,
     "uniqueID": "011b35ba-3932-43e3-91e3-c3396d8b40a8",
     "ioValues": [],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
     "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
+    "allAtoms": [
+        {
+            "atomType": "Output",
+            "name": "Output",
+            "x": 0.98,
+            "y": 0.5,
+            "uniqueID": "bc425c92-de94-4632-90a0-0cef272da045",
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "8894f015-d4e4-4cea-8629-b60bbbba115a"
+                }
+            ],
+            "description": "Connect geometry here to make it available in the next level up. "
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.6071428571428572,
+            "y": 0.5726256983240223,
+            "uniqueID": "8894f015-d4e4-4cea-8629-b60bbbba115a",
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Creates a new circle."
+        }
+    ],
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": "8894f015-d4e4-4cea-8629-b60bbbba115a",
+            "ap2ID": "bc425c92-de94-4632-90a0-0cef272da045"
+        }
+    ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
     "compiledBom": {},
